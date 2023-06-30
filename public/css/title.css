@@ -1,0 +1,35 @@
+.title {
+    padding: 10px;
+    margin: 20px;
+    font-size: 24px;
+    color: #252424;
+    background-color: #b2dfdb;
+    border-radius: 10px;
+}
+
+.subtitle {
+    padding: 8px;
+    margin: 16px;
+    font-size: 20px;
+    color: #252424;
+    background-color: #ffe0b2;
+    border-radius: 10px;
+}
+
+.section-title {
+    padding: 6px;
+    margin: 12px;
+    font-size: 18px;
+    color: #252424;
+    background-color: #c5e1a5;
+    border-radius: 10px;
+}
+
+.section-subtitle {
+    padding: 4px;
+    margin: 8px;
+    font-size: 16px;
+    color: #252424;
+    background-color: #ffcdd2;
+    border-radius: 10px;
+}

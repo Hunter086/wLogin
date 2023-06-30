@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.menu {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .menu-toggle {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-list div{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-list li {
+    position: relative;
+  }
+  
+  .menu-list li a, .menu-list div li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  .menu-list div{
+    position: relative;
+  }
+  
+  .menu-list li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .menu-list li a:hover {
+    color: #ff00ff;
+  }
+  
+  .menu-list li a:hover:before {
+    transform: scaleX(1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-list {
+      display: none;
+      flex-direction: column;
+      background-color: #222;
+      padding: 10px;
+    }
+  
+    .menu-list li {
+      margin-bottom: 10px;
+    }
+  
+    .menu-list li a {
+      padding: 5px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+  
+    .menu-list li a:hover {
+      color: #ff00ff;
+    }
+  
+    .show-menu {
+      display: block;
+    }
+  }
+.login-button {
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+}

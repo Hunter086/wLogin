@@ -1,0 +1,73 @@
+#user-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#users {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 30%;
+}
+
+#users li {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+button,
+strong {
+    flex: 1;
+    padding: 5px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+}
+
+.button.primary {
+    background-color: #b2dfdb;
+    color: #000;
+}
+
+.button.secondary {
+    background-color: #ffe0b2;
+    color: #000;
+}
+
+.button.success {
+    background-color: #c5e1a5;
+    color: #000;
+}
+
+.button.warning {
+    background-color: #ffcdd2;
+    color: #000;
+}
+
+.button.info {
+    background-color: #bbdefb;
+    color: #000;
+}
+
+.button.danger {
+    background-color: #ef9a9a;
+    color: #000;
+}

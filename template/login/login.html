@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" type="text/css" href="../../public/css/login.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/title.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div class="login-container">
+        <h1 class="title">Iniciar Sesión</h1>
+        <form id="login-form" action="../../src/Controller/LoginController.php" method="post">
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <script src="../../public/js/login.js"></script>
+    <script src="../../public/js/background.js"></script>
+</body>
+</html>
