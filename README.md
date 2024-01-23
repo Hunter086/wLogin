@@ -1,8 +1,20 @@
-1 Requisitos previos:
-Asegúrate de tener instalados PHP, Composer y Symfony en tu PC. Puedes instalar Symfony utilizando el instalador de Symfony o a través de Composer.
+# Guía de Configuración para Proyecto Symfony con Google Sign-In
 
-2 Clonar el Repositorio:
+## 1. Requisitos previos:
+
+Asegúrate de tener instalados los siguientes elementos en tu PC:
+
+- PHP
+- Composer
+- Symfony
+
+Puedes instalar Symfony mediante el instalador oficial o a través de Composer.
+
+## 2. Clonar el Repositorio:
+
 Clona el repositorio del proyecto desde el repositorio remoto utilizando Git.
+
+```bash
 git clone <URL_del_repositorio>
 
 3 Instalar Dependencias:
