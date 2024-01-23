@@ -16,24 +16,32 @@ Clona el repositorio del proyecto desde el repositorio remoto utilizando Git.
 
 ```bash
 git clone <URL_del_repositorio>
+## 3. Instalar Dependencias:
 
-3 Instalar Dependencias:
 Navega al directorio del proyecto y ejecuta el siguiente comando para instalar las dependencias del proyecto.
 
-4 Configuración del Entorno:
+```bash
+composer install
+
+##  4 Configuración del Entorno:
 Copia el archivo .env y configura las variables de entorno necesarias, como la conexión a la base de datos y las credenciales de Google Sign-In.
+```bash
 cp .env.dist .env
 
-5 Crear la Base de Datos:
+## 5 Crear la Base de Datos:
 Si tu proyecto utiliza una base de datos, crea la base de datos y ejecuta las migraciones.
+```bash
 php bin/console doctrine:database:create
+```bash
 php bin/console doctrine:migrations:migrate
 
-6 Configuración de Google Sign-In:
+## 6 Configuración de Google Sign-In:
 Obtén las credenciales de OAuth 2.0 para Google Sign-In desde el Google Developer Console, y configura las credenciales en tu aplicación Symfony.
 
-7 Ejecutar el Servidor de Desarrollo:
+## 7 Ejecutar el Servidor de Desarrollo:
 Inicia el servidor de desarrollo de Symfony.
+```bash
 symfony server:start
 ó
+```bash
 npm run serve
